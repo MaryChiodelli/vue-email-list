@@ -10,8 +10,8 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="email in mailingList" v-if="mailingList.length === 10">
+        <ul v-if="mailingList.length === num">
+            <li v-for="email in mailingList">
                 {{ email }}
             </li>
         </ul>
